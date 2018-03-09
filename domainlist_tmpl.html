@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Domainlist</title>
+        <style>
+            body {
+                text-align: center;
+            }
+            #domainlist {
+                display: inline-block;
+                text-align: right;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="domainlist">
+            {% for domain in domains %}
+            <a href="https://{{ domain }}">{{ domain }}</a><br>
+            {% endfor %}
+        </div>
+    </body>
+</html>
